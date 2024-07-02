@@ -6,7 +6,6 @@
 // import axios from 'axios';
 
 // export default function Signin() {
-
 //     const router = useRouter();
 
 //     const formik = useFormik({
@@ -18,9 +17,12 @@
 //             try {
 //                 const response = await axios.post('https://linked-posts.routemisr.com/users/signin', values);
 //                 if (response.data.message === 'success') {
+//                     // Assuming the token is in response.data.token
 //                     const token = response.data.token;
+//                     // Store the token in localStorage
 //                     localStorage.setItem('token', token);
-//                     router.push('/home'); 
+//                     // Navigate to the home page or another route
+//                     router.push('/home'); // Replace '/home' with your target route
 //                 }
 //             } catch (error) {
 //                 console.error('Login failed:', error);
@@ -63,8 +65,9 @@
 //             </Box>
 //         </Container>
 //     );
-
 // }
+
+
 'use client';
 import React, { useState } from 'react';
 import { TextField, Button, Container, Typography, Box, CircularProgress } from '@mui/material';
